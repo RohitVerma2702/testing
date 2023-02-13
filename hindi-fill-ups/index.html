@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/bootstrap-5.2.0-dist/css/bootstrap.min.css">
+
+        <!-- Font Awesome CDN -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/font-icons/fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/css/all.min.css"/>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="assets/css/main.css">
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+        <!-- <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+            type="text/javascript"></script> -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"
+            type="text/javascript"></script>
+        <script
+            src="assets/bootstrap-5.2.0-dist/js/bootstrap.min.js"
+            type="text/javascript"></script>
+            <script src="assets/font-icons/fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/js/all.min.js" type="text/javascript"></script>
+        <script src="assets/js/data.js" type="text/javascript"></script>
+        <script src="assets/js/main.js" type="text/javascript"></script>
+
+        <title id="app-title"></title>
+    </head>
+    <body id="appin">
+
+        <div id="main" class="container-fluid m-0 p-0 vh-100 position-relative" style="width:178vh;">
+            <div id="first-screen" class="w-100 h-100 m-0 p-0">
+                <img class="m-0 p-0 d-block w-100 h-100" src="assets/img/Maths background @4x-100.jpg" alt="First Screen Image">
+                <div class="m-0 p-0 position-absolute start-0 translate-middle" style="top: 5%;">
+                    <img src="assets/img/fill the blabks.png" class="fs-img" alt="Fill in the blanks">
+                    <img src="assets/img/sa.png" class="fs-img1" alt="">
+                </div>
+                <a class="btn play-button position-absolute start-50" style="bottom:5%;" onclick="startActivity();">Start</a>
+            </div>
+
+            <div id="entry-screen" class="w-100 h-100 m-0 p-0 d-none">
+                <div id="option-box" class="m-0 p-0 w-100 position-absolute d-flex justify-content-center align-items-center flex-column" style="top: 5%; height: 30%; z-index: 1;">
+                    
+                    <div class="row m-2 p-0">
+                        <div class="col m-2 p-0">
+                            <span id="drag_4" draggable="true" ondragstart="dragpoint(event)">इनसे</span>
+                        </div>
+                        <div class="col m-2 p-0">
+                            <span id="drag_6" draggable="true" ondragstart="dragpoint(event)">मैं</span>
+                        </div>
+                        <div class="col m-2 p-0">
+                            <span id="drag_2" draggable="true" ondragstart="dragpoint(event)">इस</span>
+                        </div>
+                        <div class="col m-2 p-0">
+                            <span id="drag_7" draggable="true" ondragstart="dragpoint(event)">यह</span>
+                        </div>
+                    </div>
+
+                    <div class="row m-2 p-0">
+                        <div class="col m-2 p-0">
+                            <span id="drag_1" draggable="true" ondragstart="dragpoint(event)">हमारा</span>
+                        </div>
+                        <div class="col m-2 p-0">
+                            <span id="drag_3" draggable="true" ondragstart="dragpoint(event)">हम</span>
+                        </div>
+                        <div class="col m-2 p-0">
+                            <span id="drag_5" draggable="true" ondragstart="dragpoint(event)">इन्ही</span>
+                        </div>
+                        <div class="col m-2 p-0">
+                            <span id="drag_8" draggable="true" ondragstart="dragpoint(event)">हमें</span>
+                        </div>
+                        <div class="col m-2 p-0">
+                            <span id="drag_9" draggable="true" ondragstart="dragpoint(event)">उनका</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="unscrambled" class="m-0 p-0 w-100 h-50 position-absolute start-0 d-flex justify-content-center align-items-center" style="bottom: 5%;">
+
+                    <p class="m-5 text-center"><span id="drop_1" class="blanks" ondrop="droppoint(event)" ondragover="allowDropOption(event)"></span> जीवन पेड़ पोधों पर आश्रित है। यदि <span id="drop_2" class="blanks" ondrop="droppoint(event)" ondragover="allowDropOption(event)"></span> धरती पर पेड़ पौधे ना हो तो <span id="drop_3" class="blanks" ondrop="droppoint(event)" ondragover="allowDropOption(event)"></span> जीवित नही रह पाएंगे। <span id="drop_4" class="blanks" ondrop="droppoint(event)" ondragover="allowDropOption(event)"></span> हमें फल फूल अन्न और दवाइयां भी प्राप्त होती है। <span id="drop_5" class="blanks" ondrop="droppoint(event)" ondragover="allowDropOption(event)"></span> से हमें प्रतिदिन ताजी़ हवा मिलती हैं <span id="drop_6" class="blanks" ondrop="droppoint(event)" ondragover="allowDropOption(event)"></span> प्रतिदिन सुबह की सैर करने जाता हूं। <span id="drop_7" class="blanks" ondrop="droppoint(event)" ondragover="allowDropOption(event)"></span> सेहत के लिए बहुत फायदेमंद होती है। <span id="drop_8" class="blanks" ondrop="droppoint(event)" ondragover="allowDropOption(event)"></span> पेड़ पौधे अवश्य लगाने चाहिए। साथ ही <span id="drop_9" class="blanks" ondrop="droppoint(event)" ondragover="allowDropOption(event)"></span> रख रखाव भी करना चाहिए।</p>
+
+                </div>
+            </div>
+
+            <div id="welldone-screen" class="w-100 h-100 m-0 p-0 d-none">
+                <img class="m-0 p-0 d-block w-100 h-100" src="assets/img/Maths background @4x-100.jpg" alt="Last Screen Image">
+                <img src="assets/img/well done.png" class="ls-img" alt="">
+            </div>
+        </div>
+
+        <audio autoplay="autoplay" controls="controls" loop="loop" id="music" style="display: none" src="assets/audios/2.mp3">
+            <source src="assets/audios/2.mp3" type="audio/ogg">
+            <source src="assets/audios/2.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+
+        <script>
+
+            document.addEventListener('click', function () {
+                document
+                    .getElementById('music')
+                    .play()
+            }, {once: true});
+            var aud = document.getElementById("music");
+            aud.volume = 0.50;
+        </script>
+
+    </body>
+</html>

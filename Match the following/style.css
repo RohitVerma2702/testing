@@ -1,0 +1,244 @@
+@font-face {
+    font-family: GloriaHallelujah;
+    src: url(fonts/GloriaHallelujah-Regular.ttf);
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 150vh !important;
+    height: 100vh !important;
+}
+.myVideo{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.content{
+    height: 70vh;
+    width: 70vw;
+    margin-top: 15vh;
+    margin-left: 15vw;
+}
+.items{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    position: relative;
+    top: -10px;
+}
+.optleft{
+    position:absolute;
+    background-color: #026C97;
+    left: 32vw;
+    height: 5vh;
+    width: 8vw;
+    text-align: center;
+    font-size: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.optleft::after{
+    position: absolute;
+    content: ".";
+    color: green;
+    font-size: 100px;
+    margin-left: 4vw;
+    margin-top: -16vh;
+    z-index: 3;
+}
+.optright::before{
+    position: absolute;
+    content: ".";
+    color: green;
+    font-size: 100px;
+    margin-left: -6vw;
+    margin-top: -9vh;
+}
+.optright{
+    position:absolute;
+    background-color: #026C97;
+    right: 32vw;
+    height: 5vh;
+    font-size: 100%;
+    width: 8vw;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.opt1{
+    top: 25vh;
+}
+.opt2{
+    top: 32vh;
+}
+.opt3{
+    top: 39vh;
+}
+.opt4{
+    top: 46vh;
+}
+.opt5{
+    top: 53vh;
+}
+.opt6{
+    top: 60vh;
+}
+.opt7{
+    top: 67vh;
+}
+.opt8{
+    top: 74vh;
+}
+.opt9{
+    top: 25vh;
+}
+.opt10{
+    top: 32vh;
+}
+.opt11{
+    top: 39vh;
+}
+.opt12{
+    top: 46vh;
+}
+.opt13{
+    top: 53vh;
+}
+.opt14{
+    top: 60vh;
+}
+.opt15{
+    top: 67vh;
+}
+.opt16{
+    top: 74vh;
+}
+.title{
+    position: absolute;
+    font-size: 40px;
+    top: 0vh;
+}
+#line1{
+    margin-top: -48.5vh;
+    visibility: hidden;
+    rotate: 41.3deg;
+    width: 34%;
+    border-top: 3px solid green;
+}
+#line2{
+    margin-top: 13.5vh;
+    visibility: hidden;
+    rotate: 52.7deg;
+    width: 41.9%;
+    margin-left: 20.3vw;
+    border-top: 3px solid green;
+}
+#line3{
+    margin-top: -5.3vh;
+    visibility: hidden;
+    rotate: 33deg;
+    width: 30.5%;
+    border-top: 3px solid green;
+}
+#line4{
+    margin-top: -8.5vh;
+    visibility: hidden;
+    rotate: -12deg;
+    width: 26%;
+    border-top: 3px solid green;
+}
+#line5{
+    margin-top: -5vh;
+    visibility: hidden;
+    rotate: -41.5deg;
+    width: 33%;
+    border-top: 3px solid green;
+}
+#line6{
+    margin-top: 24vh;
+    visibility: hidden;
+    rotate: 12deg;
+    width: 26%;
+    border-top: 3px solid green;
+}
+#line7{
+    margin-top: -8.5vh;
+    visibility: hidden;
+    rotate: -33deg;
+    width: 30%;
+    border-top: 3px solid green;
+}
+#line8{
+    margin-top: -5.1vh;
+    visibility: hidden;
+    rotate: -52.5deg;
+    width: 42%;
+    border-top: 3px solid green;
+}
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+      background-color: red;
+    }
+  
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+  .line{
+    z-index: 99999!important;
+  }
+  .apply-shake {
+      animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  }
+#content {
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    margin: auto;
+    position: relative;
+}
+#fullscreen{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 1);
+    height: 100%;
+    width: 100%;
+    z-index: 9999!important;
+    text-align: center;
+    color: azure;
+    display: block;
+    align-items: center;
+}
+.fs{
+    font-size: 7rem;
+}
+#first{
+    height: 100vh;
+    width: 100vw;
+}
+.firstimg{
+    height: 50vh;
+    padding-top: 25vh;
+    padding-left: 25vw;
+    width: 50vw;
+}
+.lastimg{
+    height: 50vh;
+    padding-top: 25vh;
+    padding-left: 25vw;
+    width: 50vw;
+}

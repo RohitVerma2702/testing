@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/bootstrap-5.2.0-dist/css/bootstrap.min.css">
+
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="assets/font-icons/fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/css/all.min.css"/>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="assets/css/main.css">
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+        <!-- <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+            type="text/javascript"></script> -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"
+            type="text/javascript"></script>
+        <script
+            src="assets/bootstrap-5.2.0-dist/js/bootstrap.min.js"
+            type="text/javascript"></script>
+            <script src="assets/font-icons/fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/js/all.min.js" type="text/javascript"></script>
+        <script src="assets/js/data.js" type="text/javascript"></script>
+        <script src="assets/js/main.js" type="text/javascript"></script>
+
+        <title id="app-title"></title>
+    </head>
+    <body id="appin">
+
+        <div id="main" class="container-fluid m-0 p-0 vh-100 position-relative" style="width:178vh;">
+            <div id="first-screen" class="w-100 h-100 m-0 p-0">
+                <img src="assets/img/varn@4x.png" class="fs-img" alt="Divide the numbers">
+                <video id="entry-6" muted autoplay loop class="w-100 h-100 m-0 p-0 d-block">
+                    <source src="assets/videos/1. Title Board.m4v" type="video/mp4">
+                    Your browser does not support videos.
+                </video>    
+                <a class="btn play-button position-absolute start-50" style="bottom:5%;" onclick="startActivity();">Start</a>
+            </div>
+
+            <div id="entry-screen" class="w-100 h-100 m-0 p-0 d-none">
+                <video id="main-screen" muted autoplay loop class="w-100 h-100 m-0 p-0 d-none">
+                    <source src="assets/videos/2. Main Screen 1.m4v" type="video/mp4">
+                    Your browser does not support videos.
+                </video>
+
+                <video id="wrong-screen" muted autoplay loop class="w-100 h-100 m-0 p-0 d-none">
+                    <source src="assets/videos/3. Thumbs Down (Wrong).m4v" type="video/mp4">
+                    Your browser does not support videos.
+                </video>
+
+                <video id="right-screen" muted autoplay loop class="w-100 h-100 m-0 p-0 d-none">
+                    <source src="assets/videos/4. Thumbs Up (right).m4v" type="video/mp4">
+                    Your browser does not support videos.
+                </video>
+
+                <div id="option-box" class="m-0 p-0 w-100 position-absolute d-none" style="top: 15%; height: 55%; z-index: 1;">
+                    
+                    <!-- Gif drop boxes will come here -->
+
+                </div>
+
+                <div id="unscrambled" class="m-0 p-0 position-absolute d-flex justify-content-center d-none">
+                    
+                    <!-- Unscrambled options go here -->
+
+                </div>
+            </div>
+
+            <div id="welldone-screen" class="w-100 h-100 m-0 p-0 d-none">
+                <video muted autoplay class="w-100 h-100 m-0 p-0 d-block">
+                    <source src="assets/videos/5. Good Job.m4v" type="video/mp4">
+                    Your browser does not support videos.
+                </video>
+            </div>
+        </div>
+
+        <audio autoplay="autoplay" controls="controls" loop="loop" id="music" style="display: none" src="assets/audios/2.mp3">
+            <source src="assets/audios/2.mp3" type="audio/ogg">
+            <source src="assets/audios/2.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+
+        <script>
+
+            document.addEventListener('click', function () {
+                document
+                    .getElementById('music')
+                    .play()
+            }, {once: true});
+            var aud = document.getElementById("music");
+            aud.volume = 0.50;
+        </script>
+
+    </body>
+</html>

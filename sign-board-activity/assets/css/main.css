@@ -1,0 +1,47 @@
+#activity-title{
+    border: solid #fcb03b 0.5rem;
+    background-color: #ffffff;
+    top: 20%;
+    left: 32%;
+    width: 37%;
+    border-radius: 1rem;
+}
+
+#question{
+    top: 29%;
+    left: 32%;
+    width: 30%;
+    height: 35%;
+}
+
+#options{
+    /* border: solid red 5px; */
+    left: 74%;
+    width: 22%;
+}
+
+#options p{
+    /* border: solid red 5px; */
+    text-align: center;
+    height: 20%;
+}
+
+#options p label{
+    /* border: solid red 2px; */
+}
+
+#options p label:hover{
+    cursor: pointer;
+}
+
+#opt1{
+    top: 28%;
+}
+
+#opt2{
+    top: 55%;
+}
+
+#opt3{
+    top: 82%;
+}

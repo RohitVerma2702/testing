@@ -1,0 +1,103 @@
+.play-button{
+    border: solid red 0.5rem;
+    padding: 0.5rem 3rem;
+    border-radius: 2rem;
+    background-color: yellow;
+    font-size: 2rem;
+    color: red;
+    font-weight: bold;
+    transform: translateX(-50%);
+    box-shadow: 0.25rem 0.25rem 0.25rem yellow;
+    transition: 0.5s;
+}
+
+.play-button:hover{
+    color: yellow;
+    border: solid yellow 0.5rem;
+    background-color: red;
+    box-shadow: 0 0 0;
+}
+#unscrambled{
+    width: 600px;
+    height: 140px;
+    left: 490px;
+    top: 12px;
+}
+#unscrambled p, #drag_1, #drag_2, #drag_3{
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin: 0.5rem;
+    border: dashed pink 0.25rem;
+    
+    width: fit-content;
+}
+#unscrambled p:hover{
+    cursor: all-scroll;
+}
+
+#option-box div{
+    width: 7rem;
+    height: 3.5rem;
+    border: solid red 2px;
+}
+
+#option-box #drop6_1{
+    top: 74%;
+    left: 28.6%;
+}
+
+#option-box #drop6_3{
+    top: 74%;
+    left: 56.5%;
+}
+
+#option-box #drop6_5{
+    top: 74%;
+    left: 84.5%;
+}
+#option-box #drop6_2{
+    top: 88%;
+    left: 28.6%;
+}
+
+#option-box #drop6_4{
+    top: 88%;
+    left: 56.5%;
+}
+
+#option-box #drop6_6{
+    top: 88%;
+    left: 84.5%;
+}
+#answer_1{
+    font-size: 1.5rem;
+    position: absolute;
+    color: white;
+    top: 55%;
+    left: 31%;
+}
+
+#answer_2{
+    font-size: 1.5rem;
+    position: absolute;
+    color: white;
+    top: 55%;
+    left: 58%;
+}
+
+#answer_3{
+    font-size: 1.5rem;
+    position: absolute;
+    color: white;
+    top: 55%;
+    left: 86.5%;
+}
+.fs-img{
+    position: absolute;
+    height: 450px;
+    width: 430px;
+    top: 10px;
+    left: 580px;
+}
